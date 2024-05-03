@@ -1,5 +1,7 @@
 {
   "name": "my-youtube",
+  "description": "This my-youtube project is part of Namaste React.",
+  "author": "Bhargav Talpada",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
