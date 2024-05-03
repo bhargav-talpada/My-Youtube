@@ -21,4 +21,5 @@
 - Remove all unused things
 - Tailwind setup
 - Add Rajdhani font
-- Style header
+- Create Header
+- Create Sidebar
