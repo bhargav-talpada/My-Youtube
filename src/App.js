@@ -1,8 +1,11 @@
+import Body from "./components/Body";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="">
-      My-youtube
+      <Header />
+      <Body />
     </div>
   );
 }
