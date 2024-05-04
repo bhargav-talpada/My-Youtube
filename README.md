@@ -22,4 +22,6 @@
 - Tailwind setup
 - Add Rajdhani font
 - Create Header
-- Create Sidebar
+- Create Sidebar & build sidebar menus
+- Create Buttonlist
+- 

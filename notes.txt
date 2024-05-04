@@ -1,0 +1,12 @@
+To Find youtube api = 
+    -> Write on google -> youtube video apis -> Videos:list -> API Explorer 
+    -> on the API Explorer write on part input box : snippet, contentDetails, statistics
+    -> select mostPopolar on chart dropdown
+    -> Go on HTTP and copy your API 
+
+-> To Find YOUR_API_KEY =
+    -> Write on google -> youtube api key -> select Youtube Data API Overview 
+    -> Select Get Auth Credentials on left sidebar -> go to Credentials page
+    -> Create Project -> Give project name -> click on Credentials
+    -> click on Create Credentials -> select Api Key -> Gives you api key copy this key & use on your project
+    -> click on Enabled APIs & services -> click on enable (make you api key status enable because by default keys status is disable)
