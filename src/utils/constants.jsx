@@ -2,4 +2,4 @@ export const YOUTUBE_LOGO_URL = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA
 
 const GOOGLE_API_KEY = "AIzaSyAT-PkX4WxVnK2h2NJqdv0K11oCviVHP5o";
 
-export const YOUTUBE_VIDEO_API = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2C%20contentDetails%2C%20statistics&chart=mostPopular&maxResults=50&key=" + GOOGLE_API_KEY;
+export const YOUTUBE_VIDEO_API = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=" + GOOGLE_API_KEY;
