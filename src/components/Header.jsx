@@ -13,7 +13,7 @@ const Header = () => {
     };
 
   return (
-    <div className="flex justify-between items-center p-4 m-2 shadow-lg">
+    <div className="flex justify-between items-center px-4 py-2 m-2 shadow-lg">
         <div className="flex items-center">
             <FaBars className="text-3xl cursor-pointer" onClick={toggleMenuHandler} />
             <a href="/"> <img src={YOUTUBE_LOGO_URL} className="w-36 mx-2" alt="youtube logo" /> </a>

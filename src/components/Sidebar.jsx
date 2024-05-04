@@ -27,6 +27,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { IoFlagOutline } from "react-icons/io5";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { RiFeedbackLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
 
@@ -38,7 +39,7 @@ const Sidebar = () => {
   return (
     <div className="p-5 shadow-lg w-60 ">
       <div>
-          <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><GoHome className="text-2xl" /> Home</h2>
+          <Link to="/"><h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><GoHome className="text-2xl" /> Home</h2></Link>
           <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><SiYoutubeshorts className="text-2xl" /> Shorts</h2>
           <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><MdOutlineSubscriptions className="text-2xl" /> Subscriptions</h2>
       </div>
