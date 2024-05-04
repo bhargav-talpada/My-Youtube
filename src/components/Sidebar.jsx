@@ -18,7 +18,7 @@ const Sidebar = () => {
   if(!isMenuOpen) return null;
 
   return (
-    <div className="p-5 shadow-lg w-44">
+    <div className="p-5 shadow-lg w-60">
       <div>
         <ul>
           <li className="flex gap-2 items-center py-2 text-lg cursor-pointer"><GoHome /> Home</li>
