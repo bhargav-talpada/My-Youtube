@@ -28,4 +28,5 @@
 - Create a video card
 - fetch video data from api
 - router setup
-- 
+- Building a watch page
+- Fetch video as per videocard is in the watch page
