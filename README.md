@@ -24,4 +24,8 @@
 - Create Header
 - Create Sidebar & build sidebar menus
 - Create Buttonlist
+- Create a Video container
+- Create a video card
+- fetch video data from api
+- router setup
 - 
