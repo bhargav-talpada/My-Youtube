@@ -7,11 +7,10 @@ const WatchPage = () => {
 
     const dispatch = useDispatch();
     const [params] = useSearchParams();
-    console.log(params.get("v"));
 
     useEffect(() => {
         dispatch(closeMenu());
-    },[]);
+    },);
     return (
 
     <div className="px-32 pt-2">
