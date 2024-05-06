@@ -14,6 +14,7 @@ const VideosCards = ({videoCardInfo}) => {
 
     const views = useViewsCount(viewCount);     
     const publishedDate = useConvertDate(publishedAt);
+    console.log(publishedDate);
     
 
   return (
