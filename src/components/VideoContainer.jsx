@@ -7,7 +7,7 @@ const VideoContainer = () => {
   const videos = useGetVideos();
 
   return (
-    <div className="flex flex-wrap mt-5">
+    <div className="flex flex-wrap pt-0">
       {
         videos.map((video) => 
           <Link  key={video.id} to={"/watch?v=" + video.id}>
