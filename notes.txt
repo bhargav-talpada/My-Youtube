@@ -10,3 +10,12 @@ To Find youtube api =
     -> Create Project -> Give project name -> click on Credentials
     -> click on Create Credentials -> select Api Key -> Gives you api key copy this key & use on your project
     -> click on Enabled APIs & services -> click on enable (make you api key status enable because by default keys status is disable)
+
+==> Debouncing : 
+    -> when the typing speed slow then the difference between the 2 key strome is very high.
+    -> when the typing speed high then the difference between the 2 key strome is very low.
+
+    -> Performance : 
+        -> without Debouncing - Iphone pro max (14 latter) : each latter call api 14 api call * 1000 users at a time = 14000 api call
+        -> with Debouncing - 3 api call * 1000 user at a time = 3000 api call
+        
