@@ -34,4 +34,6 @@
 - convert each videos view in short length
 - Buiding Search Suggestions feature using suggestion api
 - designing
-- 
+- save search query inside of cache
+- create comments section
+- build nested commenst

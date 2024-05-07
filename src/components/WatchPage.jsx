@@ -4,6 +4,7 @@ import { closeMenu } from "../redux/appSlice";
 import { useSearchParams } from "react-router-dom";
 import useGetVideos from "../hooks/useGetVideos";
 import WatchVideoInfo from "./WatchVideoInfo";
+import CommentsContainer from "./CommentsContainer";
 
 const WatchPage = () => {
 
@@ -20,17 +21,17 @@ const WatchPage = () => {
     const filterVideo = videos.filter((vidoeId) => vidoeId.id === params.get("v"));
 
     return (
-
-    <div className="px-32 pt-20">
-        <iframe width="850" height="470" className="rounded-2xl" src={"https://www.youtube.com/embed/" + params.get("v")} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+        <div className="px-32 pt-20">
+            <iframe width="850" height="470" className="rounded-2xl" src={"https://www.youtube.com/embed/" + params.get("v")} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+                
+            </iframe>
             
-        </iframe>
-        
-        {
-            filterVideo.map((filterVideo) => <WatchVideoInfo key={filterVideo.id} vidoeInfo={filterVideo} />)
-        }
-               
-    </div>
+            {
+                filterVideo.map((filterVideo) => <WatchVideoInfo key={filterVideo.id} vidoeInfo={filterVideo} />)
+            }
+                
+            <CommentsContainer />
+        </div>
   )
 }
 
