@@ -38,51 +38,51 @@ const Sidebar = () => {
   if(!isMenuOpen) return null;
 
   return (
-    <div className=" p-5 h-[685px] hover:overflow-x-hidden overflow-y-scroll w-[260px] pt-14">
+    <div className="px-1 py-5 h-[685px] hover:overflow-x-hidden overflow-y-scroll w-[260px] pt-14">
       <div>
-          <Link to="/"><h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><GoHome className="text-2xl" /> Home</h2></Link>
-          <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><SiYoutubeshorts className="text-2xl" /> Shorts</h2>
-          <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><MdOutlineSubscriptions className="text-2xl" /> Subscriptions</h2>
+          <Link to="/"><h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><GoHome className="text-2xl" /> Home</h2></Link>
+          <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><SiYoutubeshorts className="text-2xl" /> Shorts</h2>
+          <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><MdOutlineSubscriptions className="text-2xl" /> Subscriptions</h2>
       </div>
       <hr className="mt-5 border border-gray-300" />
       <div>
-        <h1 className="flex gap-2 items-center text-xl font-bold py-3">You <PiGreaterThan className="text-2xl" /> </h1>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><BiSolidUserAccount className="text-2xl" /> Your Channel</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><GoHistory className="text-2xl" /> History</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><LuListVideo className="text-2xl" /> Playlists</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><GoVideo className="text-2xl" /> Your Videos</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><MdOutlineWatchLater className="text-2xl" /> Watch Later</h2>          
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><AiOutlineLike className="text-2xl" /> Likes Video</h2>
+        <h1 className="flex gap-2 items-center text-xl font-bold py-3 px-5">You <PiGreaterThan className="text-2xl" /> </h1>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><BiSolidUserAccount className="text-2xl" /> Your Channel</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><GoHistory className="text-2xl" /> History</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><LuListVideo className="text-2xl" /> Playlists</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><GoVideo className="text-2xl" /> Your Videos</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><MdOutlineWatchLater className="text-2xl" /> Watch Later</h2>          
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><AiOutlineLike className="text-2xl" /> Likes Video</h2>
       </div>
       <hr className="mt-5 border border-gray-300" />
       <div>
-        <h1 className="flex gap-2 items-center text-xl font-bold py-3">Explore </h1>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><FaFireAlt className="text-2xl" /> Trending</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><HiOutlineShoppingBag className="text-2xl" /> Shopping</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><CgMusicNote className="text-2xl" /> Music</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><PiFilmSlateDuotone className="text-2xl" /> Movies</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><IoMdWifi className="text-2xl" /> Live</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><SiYoutubegaming className="text-2xl" /> Gaming</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><IoNewspaperOutline className="text-2xl" /> News</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><CiTrophy className="text-2xl" /> Sports</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><BsLightbulb className="text-2xl" /> Courses</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><GiClothes className="text-2xl" /> Fashion & Beauty</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><MdPodcasts className="text-2xl" /> Podcasts</h2>
+        <h1 className="flex gap-2 items-center text-xl font-bold py-2 px-5">Explore </h1>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><FaFireAlt className="text-2xl" /> Trending</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><HiOutlineShoppingBag className="text-2xl" /> Shopping</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><CgMusicNote className="text-2xl" /> Music</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><PiFilmSlateDuotone className="text-2xl" /> Movies</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><IoMdWifi className="text-2xl" /> Live</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><SiYoutubegaming className="text-2xl" /> Gaming</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><IoNewspaperOutline className="text-2xl" /> News</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><CiTrophy className="text-2xl" /> Sports</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><BsLightbulb className="text-2xl" /> Courses</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><GiClothes className="text-2xl" /> Fashion & Beauty</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><MdPodcasts className="text-2xl" /> Podcasts</h2>
       </div>
       <hr className="mt-5 border border-gray-300" />
       <div>
-        <h1 className="flex gap-2 items-center text-xl font-bold py-3">More from YouTube </h1>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><TiSocialYoutube className="text-red-600 text-2xl" /> YouTube Premium</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><LiaYoutubeSquare className="text-red-600 text-2xl" /> YouTube Studio</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><SiYoutubemusic className="text-red-600 text-2xl" /> YouTube Music</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><SiYoutubekids className="text-red-600 text-2xl" /> YouTube Kids</h2>
+        <h1 className="flex gap-2 items-center text-xl font-bold py-2 px-5">More from YouTube </h1>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><TiSocialYoutube className="text-red-600 text-2xl" /> YouTube Premium</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><LiaYoutubeSquare className="text-red-600 text-2xl" /> YouTube Studio</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><SiYoutubemusic className="text-red-600 text-2xl" /> YouTube Music</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><SiYoutubekids className="text-red-600 text-2xl" /> YouTube Kids</h2>
       </div>
       <hr className="mt-5 border border-gray-300" />
       <div>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><IoSettingsOutline className="text-2xl" /> Settings</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><IoFlagOutline className="text-2xl" />Report history</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><IoIosHelpCircleOutline className="text-2xl" /> Help</h2>
-        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><RiFeedbackLine YoutubekclassName="text-2xl" /> Send feedback</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><IoSettingsOutline className="text-2xl" /> Settings</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><IoFlagOutline className="text-2xl" />Report history</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><IoIosHelpCircleOutline className="text-2xl" /> Help</h2>
+        <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><RiFeedbackLine YoutubekclassName="text-2xl" /> Send feedback</h2>
       </div>
       <hr className="mt-5 border border-gray-300" />
       <div className="pt-2">
