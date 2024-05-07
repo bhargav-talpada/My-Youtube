@@ -1,11 +1,12 @@
 import { FaBars, FaUser } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { YOUTUBE_LOGO_URL, YOUTUBE_SEARCH_API } from "../utils/constants";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../redux/appSlice";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { BiVideoPlus } from "react-icons/bi";
 import { useEffect, useState } from "react";
+import {cacheResults} from "../redux/searchSlice";
 
 const Header = () => {
 
@@ -13,10 +14,17 @@ const Header = () => {
   const [suggestions, setSuggestions] = useState([]);
   const [showSuggestions, setShowSuggetstions] = useState(false);
 
+  const searchCache = useSelector(store => store.search);
+  const dispatch = useDispatch();
+
   useEffect(() => {
 
     const timer = setTimeout(() => {
-      getSearchSuggestions();
+      if(searchCache[searchQuery]){
+        setSuggestions(searchCache[searchQuery]);
+      }else{
+        getSearchSuggestions();
+      }
     }, 200);
 
     return () => {
@@ -26,13 +34,16 @@ const Header = () => {
   }, [searchQuery]);
 
   const getSearchSuggestions = async () => {
+    console.log("api", searchQuery);
     const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
     const json = await data.json();
     setSuggestions(json[1]);
 
-  };
+    dispatch(cacheResults({
+      [searchQuery] : json[1],
+    }));
 
-  const dispatch = useDispatch();
+  };
 
     const toggleMenuHandler = () => {
       dispatch(toggleMenu());
