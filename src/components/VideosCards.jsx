@@ -23,7 +23,7 @@ const VideosCards = ({videoCardInfo}) => {
         <div>
             <h1 className="font-bold text-lg py-2">{title}</h1>
             <h1 className="font-semibold text-gray-500">{channelTitle}</h1>
-            <h1 className="font-semibold text-gray-500">{views} Views • {publishedAt} </h1>
+            <h1 className="font-semibold text-gray-500">{views} Views </h1>
         </div>
     </div>
   )

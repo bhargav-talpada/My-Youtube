@@ -28,6 +28,7 @@ import { IoFlagOutline } from "react-icons/io5";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { RiFeedbackLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { AiTwotoneCopyrightCircle } from "react-icons/ai";
 
 const Sidebar = () => {
 
@@ -37,7 +38,7 @@ const Sidebar = () => {
   if(!isMenuOpen) return null;
 
   return (
-    <div className="sidebar p-5 h-[685px] hover:overflow-x-hidden overflow-y-scroll w-60 pt-14">
+    <div className=" p-5 h-[685px] hover:overflow-x-hidden overflow-y-scroll w-[260px] pt-14">
       <div>
           <Link to="/"><h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><GoHome className="text-2xl" /> Home</h2></Link>
           <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><SiYoutubeshorts className="text-2xl" /> Shorts</h2>
@@ -84,6 +85,29 @@ const Sidebar = () => {
         <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer"><RiFeedbackLine YoutubekclassName="text-2xl" /> Send feedback</h2>
       </div>
       <hr className="mt-5 border border-gray-300" />
+      <div className="pt-2">
+        <div className="flex items-center gap-3 font-semibold">
+          <h1>About</h1>
+          <h1>Press</h1>
+          <h1>Copyright</h1>
+        </div>
+        <div className="flex items-center  gap-3 font-semibold">
+          <h1>Contact Us</h1>
+          <h1>Creators</h1>
+        </div>
+        <div className="flex items-center  gap-3 font-semibold">
+          <h1>Advertise</h1>
+          <h1>Developers</h1>
+        </div>
+        <div className="flex items-center pt-3  gap-2 font-semibold">
+          <h1>Terms</h1>
+          <h1>Privacy</h1>
+          <h1>Policy & Safety</h1>
+        </div>
+        <h1 className="font-semibold">How Youtube Works</h1>
+        <h1 className="font-semibold">Test New Features</h1>
+        <h1 className="pt-4 flex items-center"><AiTwotoneCopyrightCircle /> 2024 Googgle LLC</h1>
+      </div>
     </div>
   )
 }
