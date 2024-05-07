@@ -10,12 +10,13 @@
     font-weight: 500;
 }
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
+    display: none; /* hide all scrollbars  */
   }
   
   /* Track */

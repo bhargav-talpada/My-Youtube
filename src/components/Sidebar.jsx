@@ -87,25 +87,25 @@ const Sidebar = () => {
       <hr className="mt-5 border border-gray-300" />
       <div className="pt-2">
         <div className="flex items-center gap-3 font-semibold">
-          <h1>About</h1>
-          <h1>Press</h1>
-          <h1>Copyright</h1>
+          <h1 className="cursor-pointer">About</h1>
+          <h1 className="cursor-pointer">Press</h1>
+          <h1 className="cursor-pointer">Copyright</h1>
         </div>
         <div className="flex items-center  gap-3 font-semibold">
-          <h1>Contact Us</h1>
-          <h1>Creators</h1>
+          <h1 className="cursor-pointer">Contact Us</h1>
+          <h1 className="cursor-pointer">Creators</h1>
         </div>
         <div className="flex items-center  gap-3 font-semibold">
-          <h1>Advertise</h1>
-          <h1>Developers</h1>
+          <h1 className="cursor-pointer">Advertise</h1>
+          <h1 className="cursor-pointer">Developers</h1>
         </div>
         <div className="flex items-center pt-3  gap-2 font-semibold">
-          <h1>Terms</h1>
-          <h1>Privacy</h1>
-          <h1>Policy & Safety</h1>
+          <h1 className="cursor-pointer">Terms</h1>
+          <h1 className="cursor-pointer">Privacy</h1>
+          <h1 className="cursor-pointer">Policy & Safety</h1>
         </div>
-        <h1 className="font-semibold">How Youtube Works</h1>
-        <h1 className="font-semibold">Test New Features</h1>
+        <h1 className="font-semibold cursor-pointer">How Youtube Works</h1>
+        <h1 className="font-semibold cursor-pointer">Test New Features</h1>
         <h1 className="pt-4 flex items-center"><AiTwotoneCopyrightCircle /> 2024 Googgle LLC</h1>
       </div>
     </div>
