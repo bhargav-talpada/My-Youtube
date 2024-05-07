@@ -6,7 +6,7 @@ export const ButtonList = () => {
 
   return (
     <div className="mt-14 h-10 bg-white">
-      <div className="fixed flex ml-4 h-10 bg-white">
+      <div className=" flex ml-4 h-10 bg-white">
         {
           nameList.map((buttonName) => 
             <Button key={buttonName} name={buttonName} />
