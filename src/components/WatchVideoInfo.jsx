@@ -1,4 +1,5 @@
 import useViewsCount from "../hooks/useViewsCount";
+import ExpandeableParagrapgh from "./ExpandeableParagrapgh";
 
 const WatchVideoInfo = ({vidoeInfo}) => {
 
@@ -14,10 +15,10 @@ const WatchVideoInfo = ({vidoeInfo}) => {
   return (
     <div className="">
         <h1 className="pt-5 text-2xl font-bold w-[95%]">{title}</h1>
-        <h1 className="pl-7 text-xl font-bold">{channelTitle}</h1>
-        <div className="p-2 ml-7 mt-5 bg-gray-500 w-[800px]">
-            <h1 className="text-white text-lg font-semibold">{views} Views</h1>
-            <p className="text-white text-lg font-semibold">{description}</p>
+        <h1 className="pl-7 text-xl font-semibold">{channelTitle}</h1>
+        <div className="p-2 ml-7 mt-5 bg-gray-200 w-[800px]">
+            <h1 className=" text-lg font-semibold">{views} Views</h1>
+            <ExpandeableParagrapgh text={description} maxLength={200} />
         </div>
     </div>
   )
