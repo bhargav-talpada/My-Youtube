@@ -37,9 +37,9 @@ const WatchVideoInfo = ({vidoeInfo}) => {
   return (
     <div className="">
         <h1 className="pt-5 text-2xl font-bold w-[95%]">{title}</h1>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center w-[850px]">
           <h1 className="pl-7 text-xl font-semibold">{channelTitle}</h1>
-          <div className="flex items-center gap-3 pl-2">
+          <div className="flex items-center gap-3 pl-0">
             <button className="py-2 px-4 bg-black text-white text-[16px] rounded-full font-semibold">Join</button>
             <button className="flex py-2 px-4 items-center text-[16px] bg-gray-200 hover:bg-gray-300 text-black gap-1 rounded-full font-semibold"><BiSolidBellRing />Subscribed<IoIosArrowDown /></button>
           </div>
