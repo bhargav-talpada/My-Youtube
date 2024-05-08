@@ -29,7 +29,7 @@ const WatchPage = () => {
             {
                 filterVideo.map((filterVideo) => 
                    <> <WatchVideoInfo key={filterVideo.id} vidoeInfo={filterVideo} />
-                    <CommentsContainer comments={filterVideo} /> </>
+                    <CommentsContainer key={filterVideo.id} comments={filterVideo} /> </>
                 )
             }
                 

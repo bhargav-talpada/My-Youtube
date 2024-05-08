@@ -13,7 +13,8 @@ const VideosCards = ({videoCardInfo}) => {
     const {viewCount} = statistics
 
     const views = useViewsCount(viewCount);     
-    const publishedDate = useConvertDate(publishedAt);
+    const fullDate = useConvertDate(publishedAt);
+    console.log(fullDate);
     
 
   return (
@@ -22,7 +23,7 @@ const VideosCards = ({videoCardInfo}) => {
         <div>
             <h1 className="font-bold text-lg py-2">{title}</h1>
             <h1 className="font-semibold text-gray-500">{channelTitle}</h1>
-            <h1 className="font-semibold text-gray-500">{views} Views </h1>
+            <h1 className="font-semibold text-gray-500">{views} Views • {fullDate} </h1>
         </div>
     </div>
   )
