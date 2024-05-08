@@ -1,6 +1,7 @@
+import useGetVideos from "../hooks/useGetVideos";
 import CommentsList from "./CommentsList";
 
-const CommentsContainer = () => {
+const CommentsContainer = ({comments}) => {
 
     const commentsData = [
         {
@@ -74,11 +75,15 @@ const CommentsContainer = () => {
                 },
             ],
         },
-    ]
+    ];
+
+    const {statistics} = comments;
+    
+    const {commentCount} = statistics;
 
   return (
     <div className="my-5 p-2 ml-5">
-        <h1 className="text-3xl font-semibold">Comments: </h1>
+        <h1 className="text-2xl font-semibold"> {commentCount} Comments </h1>
         <CommentsList comments={commentsData} />
     </div>
   )

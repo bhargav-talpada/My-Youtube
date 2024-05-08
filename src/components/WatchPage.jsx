@@ -27,10 +27,12 @@ const WatchPage = () => {
             </iframe>
             
             {
-                filterVideo.map((filterVideo) => <WatchVideoInfo key={filterVideo.id} vidoeInfo={filterVideo} />)
+                filterVideo.map((filterVideo) => 
+                   <> <WatchVideoInfo key={filterVideo.id} vidoeInfo={filterVideo} />
+                    <CommentsContainer comments={filterVideo} /> </>
+                )
             }
                 
-            <CommentsContainer />
         </div>
   )
 }
