@@ -37,3 +37,6 @@
 - save search query inside of cache
 - create comments section
 - build nested commenst
+- build watchPageInfo buttons
+- build expandebale decscription box
+- convert likes in short length
