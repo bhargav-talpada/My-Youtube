@@ -41,3 +41,4 @@
 - build expandebale decscription box
 - convert likes in short length
 - build a live chat feature with random name or message
+- adding my message in live chat
