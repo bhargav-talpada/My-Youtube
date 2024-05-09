@@ -36,7 +36,7 @@ const WatchVideoInfo = ({vidoeInfo}) => {
 
   return (
     <div className="">
-        <h1 className="pt-5 text-2xl font-bold w-[95%]">{title}</h1>
+        <h1 className="pt-5 pl-1 text-2xl font-bold w-[850px]">{title}</h1>
         <div className="flex justify-between items-center w-[850px]">
           <h1 className="pl-7 text-xl font-semibold">{channelTitle}</h1>
           <div className="flex items-center gap-3 pl-0">

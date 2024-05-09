@@ -5,7 +5,7 @@ import { useSearchParams } from "react-router-dom";
 import useGetVideos from "../hooks/useGetVideos";
 import WatchVideoInfo from "./WatchVideoInfo";
 import CommentsContainer from "./CommentsContainer";
-import LiveChart from "./LiveChart";
+import LiveChat from "./LiveChat";
 
 const WatchPage = () => {
 
@@ -28,7 +28,7 @@ const WatchPage = () => {
                     <iframe width="850" height="470" className="rounded-2xl" src={"https://www.youtube.com/embed/" + params.get("v")} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </div>
                 <div className="w-full">
-                    <LiveChart />
+                    <LiveChat />
                 </div>
             </div>
             {
