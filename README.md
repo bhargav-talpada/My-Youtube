@@ -40,3 +40,4 @@
 - build watchPageInfo buttons
 - build expandebale decscription box
 - convert likes in short length
+- build a live chat feature with random name or message

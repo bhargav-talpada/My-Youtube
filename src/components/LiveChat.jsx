@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import ChatMessage from "./ChatMessage";
 import { useDispatch, useSelector } from "react-redux";
 import { addMessage } from "../redux/chatsSlice";
+import { generateRandomName, makeRendomMessage } from "../utils/helper";
+
 
 const LiveChat = () => {
 
@@ -15,18 +17,18 @@ const LiveChat = () => {
            console.log("Polling api ");
 
            dispatch(addMessage({
-                name: "Bhargav Talpada",
-                message: "I'm a Web Developer",
+                name: generateRandomName(),
+                message: makeRendomMessage(20),
            }))
 
-        }, 2000);
+        }, 500);
         return () => {
             clearInterval(i);
         }
     },[]);
 
   return (
-    <div className="w-full h-[470px] ml-10 p-2 bg-slate-100 border border-black rounded-lg">
+    <div className="w-full h-[470px] ml-10 p-2 bg-slate-100 border border-black rounded-lg overflow-y-scroll flex flex-col-reverse">
        {
         chatMessages.map((c, i) => 
             <ChatMessage key={i} name={c.name} message={c.message} />
