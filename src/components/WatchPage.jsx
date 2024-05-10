@@ -15,7 +15,7 @@ const WatchPage = () => {
 
     useEffect(() => {
         dispatch(closeMenu());
-    },);
+    },[]);
 
     const videos = useGetVideos();
 
