@@ -19,3 +19,4 @@ To Find youtube api =
         -> without Debouncing - Iphone pro max (14 latter) : each latter call api 14 api call * 1000 users at a time = 14000 api call
         -> with Debouncing - 3 api call * 1000 user at a time = 3000 api call
         
+- off
