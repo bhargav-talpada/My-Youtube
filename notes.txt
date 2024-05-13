@@ -20,3 +20,54 @@ To Find youtube api =
         -> with Debouncing - 3 api call * 1000 user at a time = 3000 api call
         
 - off
+
+==> Resume : 
+    -> 3 types of people see our resume :-
+        1. Bots - ATS friendlly
+            • Skills section on your resume
+                - Keyword : like fullstack, react, tailwind, etc...
+            • Proper headings
+        2. Recruiters
+            • Skills
+            • College greduation year
+            • Work experience
+            • Contact information
+                - Phone number
+                - Email 
+                - LinkedIn
+        3. 1:1 interviwers 
+            • Technical interviewrs
+                - Projects
+                    • Recent Project
+                    • Challenging project
+                - Good technical Keywords
+                - Link along with each project
+                    • github Link
+                    • working demo link
+                - Skills
+            • Managers
+
+    -> Extra stuff : 
+        • Certification
+        • Achievements
+
+    -> some things you dont write in resume : 
+        • Hobbies
+        • Address
+        • Random Achievements
+        • Marital status
+        • DOB
+        • Photos
+        • Declaration
+
+==> Interviews :
+    -> Introduction
+        • Prepare intro
+        • Start describing high level details about project and you
+        • Recent project
+        • Challenging part of recent project
+    -> Technical Round
+    -> Toward the end
+        • Ask good questions?
+        • Use this time to know more about team/company
+        • 
