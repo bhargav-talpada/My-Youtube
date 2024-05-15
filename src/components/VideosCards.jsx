@@ -1,10 +1,20 @@
 import { useSelector } from "react-redux";
 import useViewsCount from "../hooks/useViewsCount";
 import useConvertDate from "../hooks/useConvertDate";
+import { useEffect } from "react";
+import { YOUTUBE_PLAYLIST } from "../utils/constants";
 
 const VideosCards = ({videoCardInfo}) => { 
 
-  
+  useEffect(() => {
+    channelData();
+  },[]);
+
+  const channelData = async () => {
+    const data = await fetch(YOUTUBE_PLAYLIST);
+    const json = await data.json();
+    console.log("playlist",json);
+  };
 
     const isMenuOpen = useSelector(store => store.app.isMenuOpen);
 
