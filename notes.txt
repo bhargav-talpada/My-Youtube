@@ -18,8 +18,6 @@ To Find youtube api =
     -> Performance : 
         -> without Debouncing - Iphone pro max (14 latter) : each latter call api 14 api call * 1000 users at a time = 14000 api call
         -> with Debouncing - 3 api call * 1000 user at a time = 3000 api call
-        
-- off
 
 ==> Resume : 
     -> 3 types of people see our resume :-
@@ -72,3 +70,4 @@ To Find youtube api =
         • Use this time to know more about team/company
 
 off1
+off2
