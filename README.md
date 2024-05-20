@@ -1,6 +1,6 @@
 # My-Youtube 🚀
 
-- This My-Youtube project has been part of react journey learning form Namastr React.
+- This My-Youtube project has been part of react journey learning form Namaste React.
 
 
 # Features ⭐
