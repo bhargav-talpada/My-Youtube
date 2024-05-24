@@ -2,11 +2,11 @@ import Button from "./Button";
 
 export const ButtonList = () => {
 
-  const nameList = ["All", "Music", "Gaming", "Trailer", "JavaScript", "ReactJS", "WebDevelopment", "SamsungGalaxy", "ViratKohli", "TarakMehta", "KapilSharma", "Watched", "Comedies"]; 
+  const nameList = ["All","Live", "Music", "Gaming", "Cricket",  "Trailer", "JavaScript", "ReactJS", "WebDevelopment", "SamsungGalaxy", "ViratKohli", "TarakMehta", "KapilSharma", "Watched", "Comedies"]; 
 
   return (
-    <div className="mt-14 h-10 bg-white">
-      <div className=" flex ml-4 h-10 bg-white">
+    <div className="mt-14 h-10 bg-white w-screen overflow-x-scroll">
+      <div className=" flex ml-4 h-10 bg-white w-screen">
         {
           nameList.map((buttonName) => 
             <Button key={buttonName} name={buttonName} />

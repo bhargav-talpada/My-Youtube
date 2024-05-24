@@ -38,7 +38,7 @@ const Sidebar = () => {
   if(!isMenuOpen) return null;
 
   return (
-    <div className="px-1 py-5 h-[685px] hover:overflow-x-hidden overflow-y-scroll w-[260px] pt-14">
+    <div className=" px-1 py-5 h-[685px] hover:overflow-x-hidden overflow-y-scroll w-[260px] pt-14">
       <div>
           <Link to="/"><h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><GoHome className="text-2xl" /> Home</h2></Link>
           <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><SiYoutubeshorts className="text-2xl" /> Shorts</h2>
