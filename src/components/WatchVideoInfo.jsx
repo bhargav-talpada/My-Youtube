@@ -21,9 +21,9 @@ const WatchVideoInfo = ({vidoeInfo}) => {
 
     const {snippet, statistics} = vidoeInfo;
     
-    const {channelTitle, title,description, publishedAt} = snippet;
+    const {channelTitle, title,description, publishedAt, channelId} = snippet;
     const {viewCount, likeCount} = statistics;
-
+    
     const views = useViewsCount(viewCount);
 
     const likes = useGetLikesCount(likeCount);
@@ -43,7 +43,7 @@ const WatchVideoInfo = ({vidoeInfo}) => {
             <button className="py-2 px-4 bg-black text-white text-[16px] rounded-full font-semibold">Join</button>
             <button className="flex py-2 px-4 items-center text-[16px] bg-gray-200 hover:bg-gray-300 text-black gap-1 rounded-full font-semibold"><BiSolidBellRing />Subscribed<IoIosArrowDown /></button>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="ml-1 flex items-center gap-4">
             <div className="flex">
               <button className="flex items-center text-[16px] py-2 px-4 bg-gray-200 hover:bg-gray-300 text-black gap-1 border rounded-l-full font-semibold"><AiOutlineLike className="text-xl" />  {likes}</button>
               <button className="flex items-center text-[16px] py-2 px-4 bg-gray-200 hover:bg-gray-300 text-black gap-1 border rounded-r-full font-semibold"><AiOutlineDislike className="text-xl" /></button>
@@ -70,5 +70,7 @@ const WatchVideoInfo = ({vidoeInfo}) => {
     </div>
   )
 }
+
+// export {channelId};
 
 export default WatchVideoInfo;

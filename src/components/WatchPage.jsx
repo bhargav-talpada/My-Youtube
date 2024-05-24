@@ -5,14 +5,12 @@ import { useSearchParams } from "react-router-dom";
 import useGetVideos from "../hooks/useGetVideos";
 import WatchVideoInfo from "./WatchVideoInfo";
 import CommentsContainer from "./CommentsContainer";
-import LiveChat from "./LiveChat";
 import WatchPagePlaylistVideos from "./WatchPagePlaylistVideos";
 
 const WatchPage = () => {
 
     const dispatch = useDispatch();
     const [params] = useSearchParams();
-
 
     useEffect(() => {
         dispatch(closeMenu());
@@ -24,10 +22,9 @@ const WatchPage = () => {
 
     return (
         <div className="flex flex-col px-32 pt-20 h-[720px] scroll-smooth">
-            <div className="flex w-full">
-                <div className="flex">
+            <div className="">
+                <div className="flex h-[470px]">
                     <iframe width="850" height="470" className="rounded-2xl" src={"https://www.youtube.com/embed/" + params.get("v")} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                    {/* <LiveChat /> */}
                     <WatchPagePlaylistVideos />
                 </div>
             </div>

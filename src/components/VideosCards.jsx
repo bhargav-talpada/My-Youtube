@@ -8,6 +8,7 @@ const VideosCards = ({videoCardInfo}) => {
 
     const {snippet, statistics} = videoCardInfo;
     const {channelTitle, title, thumbnails, publishedAt} = snippet;
+    // const {channelId} = snippet;
     const {viewCount} = statistics
 
     const views = useViewsCount(viewCount);     
