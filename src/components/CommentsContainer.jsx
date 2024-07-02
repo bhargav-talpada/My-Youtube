@@ -76,7 +76,7 @@ const CommentsContainer = ({comments, videoId}) => {
   return (
     <div className="my-5 p-2 ml-5">
         <h1 className="text-2xl font-semibold"> {commentCount} Comments </h1>
-        {/* <CommentsList comments={commentsData} /> */}
+        <CommentsList comments={commentsData} />
     </div>
   )
 }
