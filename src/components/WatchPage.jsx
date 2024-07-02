@@ -22,7 +22,7 @@ const WatchPage = () => {
 
     return (
         <div className="flex flex-col px-32 pt-20 scroll-smooth">
-            <div className="md:flex justify-center h-[470px]">
+            <div className=" md:flex justify-center h-[470px]">
                 <iframe width="850" height="470" className="rounded-2xl" src={"https://www.youtube.com/embed/" + params.get("v")} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 <WatchPagePlaylistVideos />
             </div>
