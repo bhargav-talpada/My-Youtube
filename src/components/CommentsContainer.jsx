@@ -1,7 +1,7 @@
-import useGetVideos from "../hooks/useGetVideos";
+import useGetComments from "../hooks/useGetComments";
 import CommentsList from "./CommentsList";
 
-const CommentsContainer = ({comments}) => {
+const CommentsContainer = ({comments, videoId}) => {
 
     const commentsData = [
         {
@@ -65,6 +65,9 @@ const CommentsContainer = ({comments}) => {
             ],
         },
     ];
+
+    const allComments = useGetComments(videoId);
+    console.log(allComments);
 
     const {statistics} = comments;
     
