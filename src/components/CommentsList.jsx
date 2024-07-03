@@ -1,15 +1,17 @@
 import CommentData from "./CommentData";
 
 const CommentsList = ({comments}) => {
+
+    console.log("comments", comments);
+
+    const {items} = comments;
+
   return (
     <div>
         {
-            comments.map((comment,index) =>
+            items.map((comment) =>
                 <div> 
-                    <CommentData key={index} data={comment} />
-                    <div className="pl-5 ml-5 border border-l-black">
-                        <CommentsList  comments={comment.replies} />
-                    </div>
+                    <CommentData key={comment.id} data={comment} />
                 </div>
             )
         }
