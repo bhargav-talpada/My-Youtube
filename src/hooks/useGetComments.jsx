@@ -12,7 +12,7 @@ const useGetComments = (videoId) => {
     const getComments = async () => {
         const data = await fetch("https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=" + videoId + "&key=" + GOOGLE_API_KEY);
         const json = await data.json();
-        setAllComments(json);
+        setAllComments(json.items);
     }
 
     return allComments;
