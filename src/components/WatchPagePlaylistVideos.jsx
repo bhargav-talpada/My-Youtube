@@ -1,10 +1,7 @@
-import useGetVideos from "../hooks/useGetVideos";
 import usePlaylistVideos from "../hooks/usePlayslistVideos";
 import PlaylistVideoCards from "./PlaylistVideoCards";
 
 const WatchPagePlaylistVideos = () => {
-
-    const videos = useGetVideos();
 
     const playlistVideo = usePlaylistVideos();
 
