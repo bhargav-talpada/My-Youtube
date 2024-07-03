@@ -1,4 +1,5 @@
 import useGetComments from "../hooks/useGetComments";
+import CommentData from "./CommentData";
 import CommentsList from "./CommentsList";
 
 const CommentsContainer = ({comments, videoId}) => {
@@ -67,7 +68,11 @@ const CommentsContainer = ({comments, videoId}) => {
     // ];
 
     const allComments = useGetComments(videoId);
-    console.log(allComments);
+    console.log("all commnets",allComments);
+
+    const {items} = allComments;
+
+    console.log("items", items);
 
     const {statistics} = comments;
     
@@ -76,7 +81,11 @@ const CommentsContainer = ({comments, videoId}) => {
   return (
     <div className="my-5 p-2 ml-5">
         <h1 className="text-2xl font-semibold"> {commentCount} Comments </h1>
-        <CommentsList comments={allComments} />
+        {
+            items.map((comment) =>
+                <CommentData key={comment.id} data={comment} />
+            )
+        }
     </div>
   )
 }

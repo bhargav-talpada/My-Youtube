@@ -4,15 +4,11 @@ const CommentsList = ({comments}) => {
 
     console.log("comments", comments);
 
-    const {items} = comments;
-
   return (
     <div>
         {
-            items.map((comment) =>
-                <div> 
-                    <CommentData key={comment.id} data={comment} />
-                </div>
+            comments.map((comment) =>
+                <CommentData key={comment.id} data={comment} />
             )
         }
     </div>
