@@ -5,7 +5,6 @@ import useConvertDate from "../hooks/useConvertDate";
 const CommentData = ({data}) => {
 
     var {snippet} = data;
-    console.log(data);
 
     const {topLevelComment} = snippet;
 

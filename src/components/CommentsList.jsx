@@ -2,8 +2,6 @@ import CommentData from "./CommentData";
 
 const CommentsList = ({comments}) => {
 
-    console.log("comments", comments);
-
   return (
     <div>
         {
