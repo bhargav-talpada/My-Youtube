@@ -14,6 +14,8 @@ const usePlaylistVideos = () => {
     const filterVideo = videos.filter((vidoeId) => vidoeId.id === params.get("v"));
     console.log("play id final", filterVideo[0]?.snippet);
   
+    const cId = filterVideo?.[0]?.snippet?.channelId;
+    console.log("cid",cId);
 
     useEffect(() => {
         watchpagePlaylistVideo();
