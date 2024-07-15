@@ -18,11 +18,13 @@ const usePlaylistVideos = () => {
     console.log("cid",cId);
 
     useEffect(() => {
-        watchpagePlaylistVideo();
-      },[]);
+      if(cId){
+        watchpagePlaylistVideo(cId);
+      }
+    },[cId]);
     
-      const watchpagePlaylistVideo = async () => {
-        const data = await fetch("https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2C%20contentDetails&channelId=UCjBwQ6M9QyCgO5Pp-TQRFUA&maxResults=50&key=" + GOOGLE_API_KEY);
+      const watchpagePlaylistVideo = async (channelId) => {
+        const data = await fetch("https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2C%20contentDetails&channelId="+ channelId +"&maxResults=50&key=" + GOOGLE_API_KEY);
         const json = await data.json();
         console.log("playlist",json);
         setPlaylistVideo(json.items)
