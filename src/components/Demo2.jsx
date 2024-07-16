@@ -12,7 +12,7 @@ const Demo2 = () => {
 
     useEffect(() => {
         i.current = setInterval(() => {
-            console.log("react");
+            // console.log("react");
         },1000)
         return () => {
             clearInterval(i.current);

@@ -12,10 +12,8 @@ const usePlaylistVideos = () => {
   const videos = useGetVideos();
 
     const filterVideo = videos.filter((vidoeId) => vidoeId.id === params.get("v"));
-    console.log("play id final", filterVideo[0]?.snippet);
   
     const cId = filterVideo?.[0]?.snippet?.channelId;
-    console.log("cid",cId);
 
     useEffect(() => {
       if(cId){
@@ -26,7 +24,6 @@ const usePlaylistVideos = () => {
       const watchpagePlaylistVideo = async (channelId) => {
         const data = await fetch("https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2C%20contentDetails&channelId="+ channelId +"&maxResults=50&key=" + GOOGLE_API_KEY);
         const json = await data.json();
-        console.log("playlist",json);
         setPlaylistVideo(json.items)
       };
 
