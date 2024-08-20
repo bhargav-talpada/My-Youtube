@@ -58,11 +58,11 @@ const Header = () => {
         </div>
         <div className="  ">
           <div className="flex justify-center items-center">
-            <input type="text" value={searchQuery} onChange={((e) => setSearchQuery(e.target.value))} onFocus={() => setShowSuggetstions(true)} onBlur={() => setShowSuggetstions(false)} placeholder="Search" className="w-[500px] border border-gray-400 py-[2px] placeholder:text-[16px] px-5 rounded-l-full placeholder-black text-black text-xl" />
-            <button className="py-[5px] px-4 bg-gray-400 text-white rounded-r-full" ><IoIosSearch className="text-2xl"  /></button>
+            <input type="text" value={searchQuery} onChange={((e) => setSearchQuery(e.target.value))} onFocus={() => setShowSuggetstions(true)} onBlur={() => setShowSuggetstions(false)} placeholder="Search" className="w-28 sm:w-[200px] md:w-[500px] border border-gray-400 py-[2px] placeholder:text-sm md:placeholder:text-base px-5 rounded-l-full placeholder-black text-black text-base" />
+            <button className="py-[5px] px-1 sm:px-2 md:px-4 bg-gray-400 text-white rounded-r-full" ><IoIosSearch className="text-xl sm:text-2xl"  /></button>
           </div>
           {
-            showSuggestions && <div className="fixed px-0 py-5 w-[500px] rounded-lg mt-[6px] bg-white shadow-lg border border-gray-400">
+            showSuggestions && <div className="fixed px-0 py-5 w-[200px] md:w-[500px] rounded-lg mt-[6px] bg-white shadow-lg border border-gray-400">
               <ul>
                 {
                   suggestions.map((s) => 
@@ -73,10 +73,10 @@ const Header = () => {
             </div>
           }
         </div>
-        <div className="flex items-center gap-3 mr-3">
-            <BiVideoPlus className="text-4xl" />
-            <IoMdNotificationsOutline className="text-4xl" />
-            <FaUser className="text-2xl" /> 
+        <div className="hidden md:flex items-center gap-1 sm:gap-3 mr-3">
+            <BiVideoPlus className="text-2xl md:text-4xl" />
+            <IoMdNotificationsOutline className="text-2xl md:text-4xl" />
+            <FaUser className="text-xl md:text-2xl" /> 
         </div>
     </div>
   )
