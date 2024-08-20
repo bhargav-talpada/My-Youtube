@@ -12,7 +12,7 @@ const PlaylistVideoCards = ({playlistCardInfo}) => {
 
     useEffect(() => {
       setShortTitle(ShortTitle(title, 48));
-    });
+    }, [title]);
 
     const ShortTitle = (input, length) => {
       if(input.length > length){

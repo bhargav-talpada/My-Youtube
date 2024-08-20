@@ -11,7 +11,6 @@ const useGetVideos = () => {
   const getVideos = async () => {
     const data = await fetch(YOUTUBE_VIDEO_API);
     const json = await data.json();
-    console.log("all videos",json);
     setVideos(json.items);
   };
 
