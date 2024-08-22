@@ -22,12 +22,12 @@ const WatchPage = () => {
     
 
     return (
-        <div className="flex flex-col px-32 pt-20 scroll-smooth">
+        <div className="flex flex-col px-5 md:px-32 pt-20 scroll-smooth">
             <div className=" md:flex justify-center h-[470px]">
-                <iframe className="w-[400px] h-[250px] md:w-[850px] md:h-[470px] rounded-2xl" src={"https://www.youtube.com/embed/" + params.get("v")} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <iframe className="w-[550px] h-[350px] md:w-[850px] md:h-[470px] rounded-2xl" src={"https://www.youtube.com/embed/" + params.get("v")} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 <WatchPagePlaylistVideos />
             </div>
-            <div className="flex flex-col pt-[520px] md:pt-0">
+            <div className="flex flex-col pt-[300px] md:pt-0">
                 {
                     filterVideo.map((filterVideo) => 
                         <> 

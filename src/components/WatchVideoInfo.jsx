@@ -36,7 +36,7 @@ const WatchVideoInfo = ({vidoeInfo}) => {
 
   return (
     <div className="">
-        <h1 className="pt-5 pl-1 text-2xl font-bold w-[850px]">{title}</h1>
+        <h1 className="pt-5 pl-1 text-2xl font-bold w-[550px] md:w-[850px]">{title}</h1>
         <div className="flex justify-between items-center w-[850px]">
           <h1 className="pl-7 text-xl font-semibold">{channelTitle}</h1>
           <div className="flex items-center gap-3 pl-0">
@@ -63,7 +63,7 @@ const WatchVideoInfo = ({vidoeInfo}) => {
             </div>
           </div>
         </div>
-        <div className="p-2 ml-7 mt-5 bg-gray-200 w-[825px] rounded-xl">
+        <div className="p-2 ml-7 mt-5 bg-gray-200 w-[500px] md:w-[825px] rounded-xl">
             <h1 className=" text-lg font-semibold">{views} Views • {fullDate}</h1>
             <ExpandeableParagrapgh text={description} maxLength={200} />
         </div>
