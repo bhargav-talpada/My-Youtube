@@ -51,9 +51,9 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center px-2 py-0 h-14 fixed top-0 w-full bg-white">
         <div className="flex items-center gap-4 px-3">
-            <FaBars className="text-2xl cursor-pointer" onClick={toggleMenuHandler} />
+            <FaBars className="text-lg md:text-2xl cursor-pointer" onClick={toggleMenuHandler} />
             <a href="/"> 
-              <img src={YOUTUBE_LOGO_URL} className="w-28" alt="youtube logo" />
+              <img src={YOUTUBE_LOGO_URL} className="w-16 md:w-28" alt="youtube logo" />
             </a>
         </div>
         <div className="  ">
