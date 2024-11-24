@@ -16,7 +16,7 @@ const VideosCards = ({videoCardInfo}) => {
     
 
   return (
-    <div className={`m-2 ${isMenuOpen ? 'w-[250px] md:w-[400px]' : 'w-[260px] md:w-[355px]' }  ml-5`}>
+    <div className={`m-2 ${isMenuOpen ? 'w-[300px] md:w-[400px]' : 'w-[330px] md:w-[355px]' }  ml-5`}>
         <img src={thumbnails.medium.url} alt="thumnail" className="w-full rounded-lg hover:rounded-none" />
         <div>
             <h1 className="font-bold text-lg py-2">{title}</h1>
