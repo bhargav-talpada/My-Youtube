@@ -7,7 +7,7 @@ export const MainContainer = () => {
   const isMenuOpen = useSelector(store => store.app.isMenuOpen);
 
   return (
-    <div className={` ${isMenuOpen ? 'w-[85%] h-screen' : 'w-screen'}`}>
+    <div className={` ${isMenuOpen ? 'w-screen h-screen' : 'w-screen h-screen'}`}>
         <ButtonList />
         <VideoContainer />
     </div>

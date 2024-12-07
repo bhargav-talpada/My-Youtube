@@ -42,7 +42,7 @@ const Sidebar = () => {
 
     {/* Mobile view */}
 
-      <div className="md:hidden px-1 py-5 h-[930px] hover:overflow-x-hidden overflow-y-scroll w-[30px] pt-14">
+      <div className="md:hidden px-1 py-5 hover:overflow-x-hidden overflow-y-scroll w-[30px] pt-14">
         <div>
             <Link to="/"><h2 className="flex gap-1 items-center py-2 text-base cursor-pointer px-1 hover:bg-gray-200 rounded-lg"><GoHome className="text-xl" /> </h2></Link>
             <h2 className="flex gap-1 items-center py-2 text-base cursor-pointer px-1 hover:bg-gray-200 rounded-lg"><SiYoutubeshorts className="text-xl" /> </h2>
@@ -89,7 +89,7 @@ const Sidebar = () => {
 
     {/* Desktop view */}
 
-      <div className="hidden md:block px-1 py-5 h-[960px] hover:overflow-x-hidden overflow-y-scroll w-[260px] pt-14">
+      <div className="hidden md:block px-1 py-5 h-screen hover:overflow-x-hidden overflow-y-scroll w-[260px] pt-14">
         <div>
             <Link to="/"><h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><GoHome className="text-2xl" /> Home</h2></Link>
             <h2 className="flex gap-4 items-center py-2 text-lg cursor-pointer px-4 hover:bg-gray-200 rounded-lg"><SiYoutubeshorts className="text-2xl" /> Shorts</h2>
